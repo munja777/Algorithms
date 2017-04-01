@@ -2,7 +2,7 @@ package HackerRank.Warmup;
 
 import java.util.*;
 
-public class PlusMinus {
+class PlusMinus {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
