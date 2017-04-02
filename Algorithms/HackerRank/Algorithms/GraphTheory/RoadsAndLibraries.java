@@ -22,10 +22,10 @@ class RoadsAndLibraries {
             }
 
             for (int a1 = 0; a1 < m; a1++) {
-                int x = in.nextInt();
-                int y = in.nextInt();
-                ArrayList<Integer> list1 = city.get(x);
-                ArrayList<Integer> list2 = city.get(y);
+                int city1 = in.nextInt();
+                int city2 = in.nextInt();
+                ArrayList<Integer> list1 = city.get(city1);
+                ArrayList<Integer> list2 = city.get(city2);
                 if (list1 != list2) {
                     list1.addAll(list2);
                     list2.forEach(i -> city.put(i, list1));
