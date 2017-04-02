@@ -1,21 +1,19 @@
-package HackerRank.Algorithms.GraphTheory;
-
 import java.util.*;
 
 class RoadsAndLibraries {
 
     public static void main(String[] args) {
-        
+
         Scanner in = new Scanner(System.in);
         int q = in.nextInt();
-        
+
         for (int a0 = 0; a0 < q; a0++) {
-            
+
             HashMap<Integer, ArrayList<Integer>> city = new HashMap<>();
             int n = in.nextInt();
             int m = in.nextInt();
-            int library = in.nextInt();
-            int road = in.nextInt();
+            int x = in.nextInt();
+            int y = in.nextInt();
 
             for (int i = 1; i <= n; i++) {
                 ArrayList<Integer> list = new ArrayList<>();
@@ -33,15 +31,15 @@ class RoadsAndLibraries {
                     list2.forEach(i -> city.put(i, list1));
                 }
             }
-            if (library < road)
-                System.out.println((long) n * library);
+            if (x < y)
+                System.out.println((long) n * x);
             else {
                 long cost = 0;
                 for (ArrayList<Integer> list : city.values()) {
                     int size = list.size();
                     if (size > 0) {
-                        cost += library;
-                        cost += (size - 1) * road;
+                        cost += x;
+                        cost += (size - 1) * y;
                         list.removeIf(i -> true);
                     }
                 }
