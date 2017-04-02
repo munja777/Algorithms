@@ -1,4 +1,4 @@
-package HackerRank.Implementation;
+package HackerRank.Algorithms.Implementation;
 
 import java.util.*;
 

@@ -1,15 +1,14 @@
-package HackerRank.Warmup;
+package HackerRank.Algorithms.Warmup;
 
 import java.util.*;
 
-class SimpleArraySum {
+class AVeryBigSum {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-
-        int sum = 0;
-        for (int i=0; i<a; i++) {
+        int size = in.nextInt();
+        long sum = 0;
+        for (int i = 0; i < size; i++) {
             sum += in.nextInt();
         }
         System.out.println(sum);

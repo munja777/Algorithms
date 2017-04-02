@@ -1,4 +1,4 @@
-package HackerRank.Warmup;
+package HackerRank.Algorithms.Warmup;
 
 import java.util.Scanner;
 
