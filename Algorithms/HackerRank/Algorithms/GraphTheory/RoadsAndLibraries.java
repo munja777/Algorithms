@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 class RoadsAndLibraries {
@@ -31,6 +32,7 @@ class RoadsAndLibraries {
                     list2.forEach(i -> city.put(i, list1));
                 }
             }
+            
             if (x < y)
                 System.out.println((long) n * x);
             else {
@@ -45,6 +47,7 @@ class RoadsAndLibraries {
                 }
                 System.out.println(cost);
             }
+            
         }
     }
 }
